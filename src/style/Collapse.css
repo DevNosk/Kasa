@@ -1,13 +1,9 @@
-.aboutCollapse {
-  margin: 0px 200px 0 200px;
-  gap: 30px;
-}
-
 .aboutCollapse .collapse {
   font-size: 24px;
   font-weight: 500;
   color: white;
   background-color: #FF6060;
+  /* Remplacez par la couleur souhaitée */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,6 +16,7 @@
 
 .aboutCollapse .collapsible-content {
   color: #FF6060;
+  /* Remplacez par la couleur souhaitée */
   background-color: #F6F6F6;
   margin: -5px auto 0 auto;
   max-width: 1240px;
@@ -31,11 +28,12 @@
   padding: 35px 30px 15px 15px;
 }
 
-.accommodationCollapse .collapse {
+.housingsCollapse .collapse {
   font-size: 18px;
   font-weight: 500;
   color: white;
   background-color: #FF6060;
+  /* Remplacez par la couleur souhaitée */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,15 +44,16 @@
   cursor: pointer;
 }
 
-.accommodationCollapse .collapsible-content {
+.housingsCollapse .collapsible-content {
   color: #FF6060;
+  /* Remplacez par la couleur souhaitée */
   background-color: #F6F6F6;
   margin: -5px auto 0 auto;
   border-radius: 0 0 5px 5px;
   animation: loadContent 400ms both;
 }
 
-.accommodationCollapse .collapsible-content.open {
+.housingsCollapse .collapsible-content.open {
   padding: 35px 30px 15px 15px;
 }
 
@@ -73,12 +72,12 @@
     padding-top: 20px;
   }
 
-  .accommodationCollapse .collapse {
+  .housingsCollapse .collapse {
     font-size: 13px;
     padding: 0 10px;
   }
 
-  .accommodationCollapse .collapsible-content p {
+  .housingsCollapse .collapsible-content p {
     font-size: 12px;
   }
 }
