@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import data from '../assets/data/housings.json';
-import starColor from '../assets/star_color.png';
-import starGrey from '../assets/star_grey.png';
+import Rating from '../components/Rating';
 import Collapse from '../components/Collapse';
 import Gallery from '../components/Gallery';
+import TagList from '../components/TagList'; // Import le nouveau composant
 import '../style/Housings.css';
+import '../style/Collapse.css';
+
 export default function Housings() {
 	const params = useParams();
 	const id = params.id;
@@ -30,15 +32,6 @@ export default function Housings() {
 			equipments,
 		} = selectedItem;
 
-		const ratingNumber = parseInt(rating);
-		const stars = Array.from({ length: 5 }, (_, index) => (
-			<img
-				key={index}
-				src={index < ratingNumber ? starColor : starGrey}
-				alt={index < ratingNumber ? 'star' : 'empty-star'}
-			/>
-		));
-
 		return (
 			<section className="housingsContent">
 				<Gallery imagesList={pictures} />
@@ -49,18 +42,14 @@ export default function Housings() {
 							<h1>{title}</h1>
 							<p>{location}</p>
 						</div>
-						<ul>
-							{tags.map((tag, index) => (
-								<li key={index}>{tag}</li>
-							))}
-						</ul>
+						<TagList tags={tags} /> {}
 					</div>
 					<div className="hostStars">
 						<div className="host">
 							<p>{host.name}</p>
 							<img src={host.picture} alt={host.name} />
 						</div>
-						<div>{stars}</div>
+						<Rating rating={rating} />
 					</div>
 				</div>
 				<div className="housingsCollapse">
