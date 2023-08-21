@@ -1,83 +1,42 @@
-.aboutCollapse .collapse {
-  font-size: 24px;
+.collapse {
   font-weight: 500;
   color: white;
   background-color: #FF6060;
-  /* Remplacez par la couleur souhaitée */
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 10px 5px 15px;
   border-radius: 5px;
-  position: relative;
-  z-index: 1;
-  cursor: pointer;
-}
-
-.aboutCollapse .collapsible-content {
-  color: #FF6060;
-  /* Remplacez par la couleur souhaitée */
-  background-color: #F6F6F6;
-  margin: -5px auto 0 auto;
-  max-width: 1240px;
-  border-radius: 0 0 5px 5px;
-  animation: loadContent 600ms both;
-}
-
-.aboutCollapse .collapsible-content.open {
-  padding: 35px 30px 15px 15px;
-}
-
-.housingsCollapse .collapse {
-  font-size: 18px;
-  font-weight: 500;
-  color: white;
-  background-color: #FF6060;
-  /* Remplacez par la couleur souhaitée */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 10px;
   padding: 10px;
   position: relative;
   z-index: 1;
   cursor: pointer;
 }
 
-.housingsCollapse .collapsible-content {
+.collapsible-content {
   color: #FF6060;
-  /* Remplacez par la couleur souhaitée */
   background-color: #F6F6F6;
   margin: -5px auto 0 auto;
   border-radius: 0 0 5px 5px;
-  animation: loadContent 400ms both;
 }
 
-.housingsCollapse .collapsible-content.open {
+.collapsible-content.open {
   padding: 35px 30px 15px 15px;
 }
 
 @media screen and (max-width: 800px) {
-  .aboutCollapse .collapse {
+
+  .collapse {
     font-size: 13px;
     padding: 0 10px;
     border-radius: 7px;
   }
 
-  .aboutCollapse .collapsible-content p {
+  .collapsible-content p {
     font-size: 12px;
   }
 
-  .aboutCollapse .collapsible-content.open {
+  .collapsible-content.open {
     padding-top: 20px;
-  }
-
-  .housingsCollapse .collapse {
-    font-size: 13px;
-    padding: 0 10px;
-  }
-
-  .housingsCollapse .collapsible-content p {
-    font-size: 12px;
   }
 }
