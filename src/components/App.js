@@ -1,6 +1,6 @@
 import React from 'react';
 import RouterKasa from './RouterKasa';
-import '../style/typography.css';
+import '../style//components/typography.css';
 function App() {
 	return (
 		<React.Fragment>

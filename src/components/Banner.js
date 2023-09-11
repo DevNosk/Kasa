@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/Banner.css';
+import '../style/components/Banner.css';
 const bannerImages = {
 	'/': {
 		image: require('../assets/home_pic.jpg'),

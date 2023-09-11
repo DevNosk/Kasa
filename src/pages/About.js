@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import Banner from '../components/Banner';
 import Collapse from '../components/Collapse';
-import '../style/About.css';
+import '../style/pages/About.css';
 export default function About() {
 	const location = useLocation();
 

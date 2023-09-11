@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import Banner from './Banner';
-import Card from './Card';
+import Banner from '../components/Banner';
+import Card from '../components/Card';
 import housings from '../assets/data/housings.json';
 
 export default function Home() {

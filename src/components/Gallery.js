@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import arrowLeft from '../assets/arrow_left.png';
 import arrowRight from '../assets/arrow_right.png';
-import '../style/Gallery.css';
+import '../style/components/Gallery.css';
 export default function Gallery({ imagesList }) {
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const currentImage = imagesList[currentIndex];

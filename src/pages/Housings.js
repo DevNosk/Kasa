@@ -5,7 +5,7 @@ import Rating from '../components/Rating';
 import Collapse from '../components/Collapse';
 import Gallery from '../components/Gallery';
 import TagList from '../components/TagList'; // Import le nouveau composant
-import '../style/Housings.css';
+import '../style/pages/Housings.css';
 
 export default function Housings() {
 	const params = useParams();

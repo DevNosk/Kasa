@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './Home';
-import NotFound from './NotFound';
+import Home from '../pages/Home';
+import NotFound from '../pages/NotFound';
 import Header from './Header';
 import Footer from './Footer';
-import About from './About';
-import Housings from './Housings';
+import About from '../pages/About';
+import Housings from '../pages/Housings';
 export default function RouterKasa() {
 	return (
 		<BrowserRouter>
