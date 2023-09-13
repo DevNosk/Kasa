@@ -16,6 +16,7 @@ export default function RouterKasa() {
 				<Route path="/fiche-logement/:id" element={<Housings />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
+			<div className="placeholder"></div>
 			<Footer />
 		</BrowserRouter>
 	);
